@@ -1379,6 +1379,8 @@
 </div>
 
 <script>
+  import { Analytics } from "@vercel/analytics/next"
+  const analytics = new Analytics();
   // Mobile Nav Toggle
   const mobileToggle = document.getElementById('mobileToggle');
   const navMenu = document.getElementById('navMenu');
