@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesunbo Fola-Alade — Growth &amp; Partnerships Lead, Campaign Coordinator &amp; Web Specialist</title>
+<meta name="description" content="Portfolio of Jesunbo Fola-Alade — Growth &amp; Partnerships Lead, Campaign Coordinator, and Front-End Web Specialist based in Accra, Ghana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F7F8FA;
+    --paper-alt: #EDF0F5;
+    --card: #FFFFFF;
+    --card-accent: #0E1726;
+    --ink: #0E1726;
+    --ink-soft: #475569;
+    --ink-faint: #94A3B8;
+    --mustard: #D97706;
+    --gold: #F59E0B;
+    --stamp: #DC2626;
+    --teal: #0D9488;
+    --teal-dark: #115E59;
+    --line: #E2E8F0;
+    --radius: 8px;
+    --shadow-sm: 0 2px 8px rgba(14,23,38,0.04);
+    --shadow-md: 0 12px 32px rgba(14,23,38,0.08);
+    --shadow-lg: 0 20px 48px rgba(14,23,38,0.12);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--gold); color: var(--ink); }
+
+  h1, h2, h3, h4 {
+    font-family: 'Fraunces', serif;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--mustard);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 22px; height: 2px;
+    background: var(--mustard);
+  }
+  a { color: inherit; text-decoration: none; }
+
+  /* ---------- layout shell ---------- */
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+  section { padding: 100px 0; border-bottom: 1px solid var(--line); }
+  @media (max-width: 640px) {
+    .wrap { padding: 0 20px; }
+    section { padding: 64px 0; }
+  }
+
+  /* ---------- navigation ---------- */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(247,248,250,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .wrap {
+    display: flex; justify-content: space-between; align-items: center;
+    height: 72px;
+  }
+  .nav-mark {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px; letter-spacing: .06em;
+    font-weight: 600;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .nav-mark .dot {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--teal); display: inline-block;
+    box-shadow: 0 0 0 3px rgba(13,148,136,0.25);
+  }
+  nav ul { list-style: none; display: flex; gap: 28px; margin: 0; padding: 0; align-items: center; }
+  nav a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--ink-soft); font-weight: 500;
+    transition: color .15s ease;
+  }
+  nav a:hover { color: var(--mustard); }
+  
+  .nav-cv-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; text-transform: uppercase; letter-spacing: .08em;
+    padding: 8px 16px; border: 1.5px solid var(--ink); color: var(--ink) !important;
+    border-radius: 6px; font-weight: 600; transition: all .15s ease;
+  }
+  .nav-cv-btn:hover { background: var(--ink); color: var(--paper) !important; }
+
+  /* Mobile Nav Menu */
+  .mobile-toggle {
+    display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--ink);
+  }
+  @media (max-width: 768px) {
+    nav ul {
+      display: none; position: absolute; top: 72px; left: 0; right: 0;
+      background: var(--paper); border-bottom: 1px solid var(--line);
+      flex-direction: column; padding: 24px 32px; gap: 18px; align-items: flex-start;
+      box-shadow: var(--shadow-lg);
+    }
+    nav ul.open { display: flex; }
+    .mobile-toggle { display: block; }
+  }
+
+  /* ---------- hero section ---------- */
+  .hero {
+    padding: 88px 0 80px;
+    position: relative;
+    border-bottom: 1px solid var(--line);
+    background: linear-gradient(135deg, #F8FAFC 0%, #EEF2F6 100%);
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute; top: -50px; right: -50px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(217,119,6,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  @media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+  .hero h1 {
+    font-size: clamp(42px, 6vw, 74px);
+    line-height: 1.02;
+    color: var(--ink);
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--teal);
+    font-weight: 500;
+  }
+  .hero-role {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 22px;
+    letter-spacing: .02em;
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  }
+  .hero-role span.tag {
+    background: rgba(13,148,136,0.12); color: var(--teal-dark);
+    padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: 600;
+  }
+  .hero-desc {
+    margin-top: 22px;
+    max-width: 54ch;
+    color: var(--ink-soft);
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .hero-cta {
+    margin-top: 36px;
+    display: flex; gap: 14px; flex-wrap: wrap; align-items: center;
+  }
+  
+  .btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px; text-transform: uppercase; letter-spacing: .08em;
+    padding: 14px 24px;
+    border-radius: var(--radius);
+    display: inline-flex; align-items: center; gap: 10px;
+    border: 1.5px solid var(--ink);
+    cursor: pointer; font-weight: 600;
+    transition: transform .15s ease, background .15s ease, color .15s ease, border-color .15s ease, box-shadow .15s ease;
+  }
+  .btn.solid { background: var(--ink); color: var(--paper); box-shadow: 0 4px 14px rgba(14,23,38,0.15); }
+  .btn.solid:hover { background: var(--mustard); border-color: var(--mustard); color: #FFF; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(217,119,6,0.25); }
+  .btn.ghost { background: transparent; color: var(--ink); }
+  .btn.ghost:hover { background: var(--ink); color: var(--paper); transform: translateY(-2px); }
+  .btn.accent { background: var(--mustard); border-color: var(--mustard); color: #FFF; }
+  .btn.accent:hover { background: #b45309; border-color: #b45309; transform: translateY(-2px); }
+
+  /* Hero Profile Card with Real User Photo */
+  .profile-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    transition: transform .2s ease;
+  }
+  .profile-card:hover { transform: translateY(-4px); }
+
+  .profile-img-container {
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0 8px 24px rgba(14,23,38,0.12);
+    margin-bottom: 20px;
+    background: var(--paper-alt);
+    position: relative;
+  }
+  .profile-img-container img {
+    width: 100%; height: 100%; object-fit: cover; object-position: center top;
+  }
+
+  .profile-card h3 {
+    font-size: 24px; color: var(--ink); margin-bottom: 4px;
+  }
+  .profile-card .profile-subtitle {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px; color: var(--mustard); font-weight: 600; text-transform: uppercase; letter-spacing: .06em;
+  }
+
+  .profile-details {
+    width: 100%; margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--line);
+    display: flex; flex-direction: column; gap: 8px; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px;
+  }
+  .profile-detail-row {
+    display: flex; justify-content: space-between; color: var(--ink-soft);
+  }
+  .profile-detail-row span:first-child { color: var(--ink-faint); text-transform: uppercase; font-size: 11px; }
+  .profile-detail-row span:last-child { color: var(--ink); font-weight: 600; }
+
+  /* ---------- section headers ---------- */
+  .section-head {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    margin-bottom: 48px; gap: 24px; flex-wrap: wrap;
+  }
+  .section-head h2 { font-size: clamp(30px, 4.5vw, 42px); }
+  .section-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px; color: var(--ink-faint); letter-spacing: .1em; font-weight: 600;
+  }
+
+  /* ---------- about section ---------- */
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 52px;
+  }
+  @media (max-width: 780px) { .about-grid { grid-template-columns: 1fr; gap: 32px; } }
+  .about-grid p { color: var(--ink-soft); font-size: 17px; line-height: 1.68; margin: 0; }
+  .about-list {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; gap: 14px;
+  }
+  .about-list li {
+    display: flex; gap: 14px;
+    padding: 16px 18px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    font-size: 14px;
+    box-shadow: var(--shadow-sm);
+  }
+  .about-list li b { color: var(--ink); font-family: 'IBM Plex Mono', monospace; font-weight: 600; min-width: 140px; text-transform: uppercase; font-size: 12.5px; color: var(--teal-dark); }
+  .about-list li span { color: var(--ink-soft); }
+
+  /* ---------- 3 FEATURED PROJECTS (STYLIZED BROWSER MOCKUPS) ---------- */
+  .featured-container {
+    display: flex; flex-direction: column; gap: 56px;
+  }
+
+  .browser-frame {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .browser-frame:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: #CBD5E1;
+  }
+
+  .browser-top {
+    background: #F1F5F9;
+    padding: 12px 20px;
+    border-bottom: 1px solid var(--line);
+    display: flex; align-items: center; gap: 16px;
+  }
+  .browser-dots { display: flex; gap: 7px; }
+  .browser-dot { width: 11px; height: 11px; border-radius: 50%; }
+  .browser-dot.red { background: #FF5F56; }
+  .browser-dot.yellow { background: #FFBD2E; }
+  .browser-dot.green { background: #27C93F; }
+
+  .browser-url {
+    flex: 1;
+    background: #FFFFFF;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px; color: var(--ink-soft);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .browser-url span.ssl { color: var(--teal); font-weight: 600; font-size: 11px; }
+  .browser-status {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; text-transform: uppercase; letter-spacing: .06em;
+    background: rgba(13,148,136,0.12); color: var(--teal-dark);
+    padding: 3px 8px; border-radius: 4px; font-weight: 600;
+  }
+
+  .browser-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background: var(--card);
+  }
+  @media (max-width: 860px) { .browser-content { grid-template-columns: 1fr; } }
+
+  .browser-visual {
+    padding: 36px;
+    background: linear-gradient(135deg, #0E1726 0%, #1E293B 100%);
+    color: #FFFFFF;
+    display: flex; flex-direction: column; justify-content: space-between;
+    position: relative; overflow: hidden;
+  }
+  .browser-visual::before {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(circle at 80% 20%, rgba(217,119,6,0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  
+  .visual-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; text-transform: uppercase; letter-spacing: .12em;
+    color: var(--gold); font-weight: 600; margin-bottom: 12px;
+  }
+  .browser-visual h3 { font-size: 32px; color: #FFFFFF; margin-bottom: 12px; line-height: 1.15; }
+  .browser-visual p { color: #CBD5E1; font-size: 15.5px; line-height: 1.6; margin-bottom: 24px; }
+  
+  .project-highlights-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 16px;
+  }
+  .highlight-box {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 6px; padding: 12px;
+  }
+  .highlight-box .lbl {
+    font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #94A3B8; text-transform: uppercase;
+  }
+  .highlight-box .val {
+    font-size: 14px; font-weight: 600; color: #F8FAFC; margin-top: 4px;
+  }
+
+  .browser-details {
+    padding: 36px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    background: #FFFFFF;
+  }
+  .browser-details h4 {
+    font-size: 20px; color: var(--ink); margin-bottom: 12px;
+  }
+  .browser-details ul {
+    margin: 0 0 24px; padding-left: 20px; color: var(--ink-soft); font-size: 15px;
+  }
+  .browser-details ul li { margin-bottom: 10px; }
+  .browser-details ul li strong { color: var(--ink); }
+
+  .tech-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tech-pill {
+    font-family: 'IBM Plex Mono', monospace; font-size: 11.5px;
+    background: var(--paper-alt); border: 1px solid var(--line);
+    padding: 5px 11px; border-radius: 16px; color: var(--ink); font-weight: 500;
+  }
+
+  .project-actions {
+    display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+    border-top: 1px solid var(--line); padding-top: 20px;
+  }
+  .live-link-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; text-transform: uppercase; letter-spacing: .06em;
+    padding: 10px 18px; border-radius: 6px;
+    background: var(--mustard); color: #FFF; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: background .15s ease, transform .15s ease;
+  }
+  .live-link-btn:hover { background: #b45309; transform: translateY(-2px); }
+
+  /* ---------- ACTUAL ORG LOGOS & TICKETS ---------- */
+  .ticket {
+    display: grid;
+    grid-template-columns: 240px 1px 1fr;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    margin-bottom: 24px;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow .2s ease, transform .2s ease;
+  }
+  .ticket:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+  @media (max-width: 768px) { .ticket { grid-template-columns: 1fr; } .ticket-divider { display: none; } }
+
+  .ticket-stub {
+    padding: 24px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    gap: 16px; background: #FAFBFD;
+  }
+
+  /* Actual Logo Container */
+  .org-logo-wrapper {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 6px;
+  }
+  .org-logo-img-box {
+    width: 52px; height: 52px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    background: #FFFFFF; border: 1px solid var(--line);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06); flex-shrink: 0;
+    overflow: hidden; padding: 4px;
+  }
+  .org-logo-img-box img, .org-logo-img-box svg {
+    width: 100%; height: 100%; object-fit: contain; object-position: center;
+  }
+
+  .ticket-stub .status {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--teal-dark); font-weight: 600;
+    background: rgba(13,148,136,0.12);
+    border-radius: 20px;
+    padding: 4px 12px;
+    width: fit-content;
+  }
+  .ticket-stub .status.current { color: var(--stamp); background: rgba(220,38,38,0.1); }
+  .ticket-stub .dates {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px; color: var(--ink); font-weight: 600;
+  }
+  .ticket-stub .place {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px; color: var(--ink-faint); margin-top: 2px;
+  }
+
+  .ticket-divider {
+    position: relative;
+    background-image: repeating-linear-gradient(to bottom, var(--line) 0 6px, transparent 6px 12px);
+  }
+  .ticket-divider::before, .ticket-divider::after {
+    content: "";
+    position: absolute; left: 50%; transform: translateX(-50%);
+    width: 16px; height: 16px; border-radius: 50%;
+    background: var(--paper); border: 1px solid var(--line);
+  }
+  .ticket-divider::before { top: -8px; }
+  .ticket-divider::after { bottom: -8px; }
+
+  .ticket-body { padding: 28px 32px; }
+  .ticket-body-head {
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap;
+  }
+  .ticket-body h3 { font-size: 22px; color: var(--ink); }
+  .ticket-body .org {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13.5px; color: var(--mustard); font-weight: 600;
+    margin-top: 4px; display: flex; align-items: center; gap: 8px;
+  }
+  .ticket-body ul {
+    margin: 16px 0 0; padding-left: 18px; color: var(--ink-soft);
+  }
+  .ticket-body ul li { margin-bottom: 8px; font-size: 15px; }
+  .ticket-body ul li strong { color: var(--ink); }
+
+  /* Organization Logo Grid Strip */
+  .logo-strip {
+    display: flex; gap: 24px; flex-wrap: wrap; align-items: center; justify-content: space-around;
+    padding: 20px 28px; background: #FFFFFF; border: 1px solid var(--line); border-radius: 12px;
+    margin-bottom: 36px; box-shadow: var(--shadow-sm);
+  }
+  .logo-strip-item {
+    display: flex; align-items: center; gap: 12px; font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px; font-weight: 600; color: var(--ink);
+  }
+  .logo-strip-item img, .logo-strip-item svg {
+    height: 32px; max-width: 120px; object-fit: contain;
+  }
+
+  /* ---------- skills matrix ---------- */
+  .skills-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+  }
+  @media (max-width: 720px) { .skills-grid { grid-template-columns: 1fr; } }
+  .skill-card {
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--card); padding: 28px; box-shadow: var(--shadow-sm);
+  }
+  .skill-card h4 {
+    font-family: 'IBM Plex Mono', monospace; text-transform: uppercase;
+    font-size: 12.5px; letter-spacing: .08em; color: var(--teal-dark); margin: 0 0 16px; font-weight: 600;
+  }
+  .chip-row { display: flex; flex-wrap: wrap; gap: 9px; }
+  .chip {
+    font-family: 'IBM Plex Mono', monospace; font-size: 12.5px;
+    background: var(--paper-alt); border: 1px solid var(--line);
+    padding: 6px 13px; border-radius: 16px; color: var(--ink); font-weight: 500;
+  }
+
+  /* ---------- education & certs ---------- */
+  .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
+  @media (max-width: 720px) { .edu-grid { grid-template-columns: 1fr; gap: 24px; } }
+  .edu-item { padding: 22px 0; border-top: 1px solid var(--line); }
+  .edu-item .row { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .edu-item h4 { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+  .edu-item .org { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--teal-dark); margin-top: 4px; font-weight: 600; }
+  .edu-item .when { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--ink-faint); white-space: nowrap; font-weight: 500; }
+  .edu-item p { color: var(--ink-soft); font-size: 15px; margin-top: 10px; }
+  .cert-verify {
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--mustard); word-break: break-all; margin-top: 8px; display: inline-block; font-weight: 600;
+  }
+
+  /* ---------- contact / footer ---------- */
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 88px 0 44px;
+    background: var(--card);
+  }
+  .contact-grid {
+    display: flex; justify-content: space-between; align-items: flex-end; gap: 36px; flex-wrap: wrap;
+  }
+  footer h2 { font-size: clamp(34px, 5vw, 52px); max-width: 14ch; line-height: 1.1; }
+  .contact-links { display: flex; flex-direction: column; gap: 14px; }
+  .contact-links a, .contact-links button {
+    font-family: 'IBM Plex Mono', monospace; font-size: 14.5px;
+    text-decoration: none; color: var(--ink-soft); background: none; border: none; padding: 0;
+    cursor: pointer; text-align: left; font-weight: 500;
+    display: flex; align-items: center; gap: 10px;
+    transition: color .15s ease;
+  }
+  .contact-links a:hover, .contact-links button:hover { color: var(--mustard); }
+  
+  .foot-bottom {
+    margin-top: 64px; padding-top: 24px; border-top: 1px dashed var(--line);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--ink-faint);
+  }
+
+  /* ---------- modal drawer ---------- */
+  .modal-overlay {
+    position: fixed; inset: 0; z-index: 200;
+    background: rgba(14,23,38,0.7); backdrop-filter: blur(8px);
+    display: flex; justify-content: flex-end;
+    opacity: 0; pointer-events: none; transition: opacity .25s ease;
+  }
+  .modal-overlay.active { opacity: 1; pointer-events: auto; }
+
+  .modal-drawer {
+    width: 100%; max-width: 640px; height: 100%;
+    background: #FFFFFF; border-left: 1px solid var(--line);
+    padding: 44px 40px; overflow-y: auto;
+    transform: translateX(100%); transition: transform .3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: -10px 0 40px rgba(0,0,0,0.2);
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .modal-overlay.active .modal-drawer { transform: translateX(0); }
+
+  .modal-close {
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase;
+    letter-spacing: .08em; background: var(--paper); border: 1px solid var(--line);
+    padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600;
+    align-self: flex-end; margin-bottom: 24px; transition: all .15s ease;
+  }
+  .modal-close:hover { background: var(--ink); color: var(--paper); }
+
+  .modal-tag {
+    font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; text-transform: uppercase;
+    letter-spacing: .12em; color: var(--mustard); margin-bottom: 8px; font-weight: 600;
+  }
+  .modal-title { font-size: 32px; color: var(--ink); margin-bottom: 12px; line-height: 1.15; }
+  .modal-subtitle {
+    font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--teal-dark); margin-bottom: 24px; font-weight: 600;
+  }
+  .modal-body { color: var(--ink-soft); font-size: 16px; line-height: 1.65; }
+  .modal-body h4 { font-size: 19px; color: var(--ink); margin: 24px 0 10px; }
+  .modal-body ul { padding-left: 20px; margin: 10px 0; }
+  .modal-body ul li { margin-bottom: 8px; }
+
+  .modal-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+  .modal-chip {
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+    background: var(--paper-alt); border: 1px solid var(--line);
+    padding: 6px 13px; border-radius: 16px; color: var(--ink); font-weight: 500;
+  }
+
+  /* Toast Notification */
+  .toast {
+    position: fixed; bottom: 30px; right: 30px; z-index: 300;
+    background: var(--ink); color: #FFFFFF;
+    font-family: 'IBM Plex Mono', monospace; font-size: 13px;
+    padding: 14px 22px; border-radius: 8px; font-weight: 500;
+    box-shadow: var(--shadow-lg); opacity: 0; transform: translateY(10px);
+    transition: all .25s ease; pointer-events: none;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .toast.active { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+  <div class="wrap">
+    <a href="#" class="nav-mark"><span class="dot"></span>JESUNBO FOLA-ALADE</a>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">☰</button>
+    <ul id="navMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#featured">Featured Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="Jesunbo Fola-Alade Resume_2.pdf" target="_blank" class="nav-cv-btn">CV / Resume ↗</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Portfolio &amp; Selected Works — Accra, Ghana</div>
+        <h1>Jesunbo<br><em>Fola-Alade</em></h1>
+        <div class="hero-role">
+          <span>GROWTH &amp; PARTNERSHIPS LEAD</span> &nbsp;·&nbsp;
+          <span>CAMPAIGN COORDINATOR</span> &nbsp;·&nbsp;
+          <span>FRONT-END DESIGNER</span> &nbsp;·&nbsp;
+          <span class="tag">OPEN TO ROLES</span>
+        </div>
+        <p class="hero-desc">
+          I build full product ecosystems and run high-impact growth campaigns — spearheading creator partnerships, competition strategies, and community ecosystems on one side, and shipping front-end web design, scholarship portals, and site management on the other.
+        </p>
+        <div class="hero-cta">
+          <a class="btn solid" href="#featured">Explore 3 Featured Projects</a>
+          <a class="btn ghost" href="Jesunbo Fola-Alade Resume_2.pdf" target="_blank">Download CV (PDF)</a>
+          <button class="btn accent" onclick="copyEmail()">Copy Email</button>
+        </div>
+      </div>
+      
+      <!-- Profile Card with Real User Photo -->
+      <div class="profile-card">
+        <div class="profile-img-container">
+          <img src="profile.jpg" alt="Jesunbo Fola-Alade — Growth & Partnerships Lead, Campaign Coordinator & Front-End Designer">
+        </div>
+        <h3>Jesunbo Fola-Alade</h3>
+        <div class="profile-subtitle">Growth, Partnerships &amp; Web Specialist</div>
+        <div class="profile-details">
+          <div class="profile-detail-row"><span>Based In</span><span>Accra, Ghana</span></div>
+          <div class="profile-detail-row"><span>Phone</span><span>+233 20 134 7405</span></div>
+          <div class="profile-detail-row"><span>Email</span><span>jesunboalade@gmail.com</span></div>
+          <div class="profile-detail-row"><span>Focus</span><span>Growth, Partnerships, Front-End</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- About Section -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">01 — Profile</div>
+        <h2>The all-rounder brief</h2>
+      </div>
+      <div class="section-num">OVERVIEW</div>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p>
+          Adaptable and strategic Growth &amp; Partnerships Lead, Campaign Coordinator, and Front-End Web Specialist. Proven record in orchestrating high-value creator partnerships (Ebuka, Buchi), competition strategies (African comp, Round of 16, European tournaments), and community engagement ecosystems (ALX Ghana partnership) at <strong>Pundito</strong>.
+        </p>
+        <p style="margin-top: 16px;">
+          Equally adept at building digital web platforms — from scholarship application &amp; payment journeys on <strong>bakingintelligence.shop</strong> to front-end web design and platform administration for <strong>isaacfolaaladefoundation.org</strong> and UX research for <strong>piahub.ai</strong>.
+        </p>
+      </div>
+      <ul class="about-list">
+        <li><b>Growth &amp; Ecosystem</b> <span>Influencer partnerships, deal negotiations &amp; community building</span></li>
+        <li><b>E-Commerce &amp; UX</b> <span>Scholarship user journeys, payment flows &amp; student work galleries</span></li>
+        <li><b>Web Platforms</b> <span>isaacfolaaladefoundation.org &amp; bakingintelligence.shop</span></li>
+        <li><b>Front-End Build</b> <span>React.js, JavaScript (ES6+), HTML5/CSS3, Git/GitHub, Figma</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 3 FEATURED PROJECTS SHOWCASE -->
+<section id="featured">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">02 — Selected Works</div>
+        <h2>3 Featured Live Projects</h2>
+      </div>
+      <div class="section-num">CORE CASE STUDIES</div>
+    </div>
+
+    <div class="featured-container">
+
+      <!-- FEATURED PROJECT 1: bakingintelligence / bakingintelligence.shop -->
+      <div class="browser-frame">
+        <div class="browser-top">
+          <div class="browser-dots">
+            <span class="browser-dot red"></span>
+            <span class="browser-dot yellow"></span>
+            <span class="browser-dot green"></span>
+          </div>
+          <div class="browser-url">
+            <span><span class="ssl">https://</span>bakingintelligence.shop</span>
+            <span style="color:var(--ink-faint); font-size:11px;">E-Commerce &amp; Academy</span>
+          </div>
+          <span class="browser-status">🟢 LIVE SITE</span>
+        </div>
+        <div class="browser-content">
+          <div class="browser-visual">
+            <div>
+              <div class="visual-badge">01 — FEATURED E-COMMERCE &amp; ACADEMY</div>
+              <h3>bakingintelligence.shop</h3>
+              <p>
+                Complete front-end design, brand identity kit reconciliation, student work showcase gallery, and scholarship section (application intake &amp; payment user journey).
+              </p>
+            </div>
+            <div class="project-highlights-grid">
+              <div class="highlight-box">
+                <div class="lbl">Scholarship Flow</div>
+                <div class="val">App &amp; Payment Journey</div>
+              </div>
+              <div class="highlight-box">
+                <div class="lbl">Student Showcase</div>
+                <div class="val">Curated Project Gallery</div>
+              </div>
+              <div class="highlight-box">
+                <div class="lbl">Brand Identity</div>
+                <div class="val">Kit Reconciliation</div>
+              </div>
+              <div class="highlight-box">
+                <div class="lbl">Management</div>
+                <div class="val">General Site Admin</div>
+              </div>
+            </div>
+          </div>
+          <div class="browser-details">
+            <div>
+              <h4>Key Deliverables &amp; Impact</h4>
+              <ul>
+                <li><strong>Scholarship Section:</strong> Designed and implemented the complete application and payment user journey for aspiring baking students.</li>
+                <li><strong>Student Work Gallery:</strong> Built showcase components highlighting student creations to drive trust and course conversions.</li>
+                <li><strong>Brand Identity Reconciliation:</strong> Harmonized typography, color palettes, and component design tokens across all shop pages.</li>
+                <li><strong>Continuous Management:</strong> Ongoing front-end optimization, asset updates, and site administration.</li>
+              </ul>
+              <div class="tech-pills">
+                <span class="tech-pill">E-Commerce UX</span>
+                <span class="tech-pill">Payment Journey</span>
+                <span class="tech-pill">Scholarship Flow</span>
+                <span class="tech-pill">Brand Kit Reconciliation</span>
+                <span class="tech-pill">Site Management</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <button class="live-link-btn" onclick="openModal('bakinshop')">Read Case Study ↗</button>
+              <a class="btn ghost" href="https://bakinintelligence.shop" target="_blank" rel="noopener" style="padding: 10px 18px; font-size: 11.5px;">Visit Live Site ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURED PROJECT 2: isaacfolaaladefoundation.org -->
+      <div class="browser-frame">
+        <div class="browser-top">
+          <div class="browser-dots">
+            <span class="browser-dot red"></span>
+            <span class="browser-dot yellow"></span>
+            <span class="browser-dot green"></span>
+          </div>
+          <div class="browser-url">
+            <span><span class="ssl">https://</span>isaacfolaaladefoundation.org</span>
+            <span style="color:var(--ink-faint); font-size:11px;">Non-Profit Foundation</span>
+          </div>
+          <span class="browser-status">🟢 LIVE SITE</span>
+        </div>
+        <div class="browser-content">
+          <div class="browser-visual" style="background: linear-gradient(135deg, #115E59 0%, #0F172A 100%);">
+            <div>
+              <div class="visual-badge" style="color: #5EEAD4;">02 — FEATURED NON-PROFIT PLATFORM</div>
+              <h3>isaacfolaaladefoundation.org</h3>
+              <p>
+                Front-end web design, layout architecture, visual storytelling, and general site management for the foundation's official web presence.
+              </p>
+            </div>
+            <div class="project-highlights-grid">
+              <div class="highlight-box">
+                <div class="lbl">Front-End Design</div>
+                <div class="val">Responsive Layouts</div>
+              </div>
+              <div class="highlight-box">
+                <div class="lbl">Platform Admin</div>
+                <div class="val">General Site Mgmt</div>
+              </div>
+              <div class="highlight-box">
+                <div class="lbl">Digital Assets</div>
+                <div class="val">Media Reconciliation</div>
+              </div>
+              <div class="highlight-box">
+                <div class="lbl">Community Impact</div>
+                <div class="val">Cause Storytelling</div>
+              </div>
+            </div>
+          </div>
+          <div class="browser-details">
+            <div>
+              <h4>Key Deliverables &amp; Impact</h4>
+              <ul>
+                <li><strong>Front-End Web Design:</strong> Structured clean, accessible layouts communicating foundation initiatives, youth empowerment, and outreach projects.</li>
+                <li><strong>General Site Management:</strong> Oversee day-to-day platform updates, digital asset maintenance, and technical stability.</li>
+                <li><strong>Responsive UI/UX:</strong> Ensured full mobile and desktop optimization with crisp typography and brand consistency.</li>
+              </ul>
+              <div class="tech-pills">
+                <span class="tech-pill">Web Design</span>
+                <span class="tech-pill">Site Management</span>
+                <span class="tech-pill">Responsive Layout</span>
+                <span class="tech-pill">Content Administration</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <button class="live-link-btn" onclick="openModal('foundation')" style="background: var(--teal); color: #FFF;">Read Case Study ↗</button>
+              <a class="btn ghost" href="https://isaacfolaaladefoundation.org" target="_blank" rel="noopener" style="padding: 10px 18px; font-size: 11.5px;">Visit Live Site ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURED PROJECT 3: Wenzo / piahub.ai -->
+      <div class="browser-frame">
+        <div class="browser-top">
+          <div class="browser-dots">
+            <span class="browser-dot red"></span>
+            <span class="browser-dot yellow"></span>
+            <span class="browser-dot green"></span>
+          </div>
+          <div class="browser-url">
+            <span><span class="ssl">https://</span>piahub.ai</span>
+            <span style="color:var(--ink-faint); font-size:11px;">AI Product / Wenzo Tech</span>
+          </div>
+          <span class="browser-status">🟢 LIVE PLATFORM</span>
+        </div>
+        <div class="browser-content">
+          <div class="browser-visual" style="background: linear-gradient(135deg, #312E81 0%, #0F172A 100%);">
+            <div>
+              <div class="visual-badge" style="color: #A5B4FC;">03 — FEATURED UX &amp; INTERFACE DESIGN</div>
+              <h3>Wenzo / piahub.ai</h3>
+              <p>
+                Detailed UX research, user synthesis, usability reporting, and front-end Figma design edits and component contributions for piahub.ai.
+              </p>
+            </div>
+            <div class="project-highlights-grid">
+              <div class="highlight-box">
+                <div class="lbl">UX Research</div>
+                <div class="val">User Insights &amp; Personas</div>
+              </div>
+              <div class="highlight-box">
+                <div class="lbl">Figma Design</div>
+                <div class="val">Component Edits</div>
+              </div>
+              <div class="highlight-box">
+                <div class="lbl">Usability</div>
+                <div class="val">Actionable Reports</div>
+              </div>
+              <div class="highlight-box">
+                <div class="lbl">Product Strategy</div>
+                <div class="val">Cross-Team Alignment</div>
+              </div>
+            </div>
+          </div>
+          <div class="browser-details">
+            <div>
+              <h4>Key Deliverables &amp; Impact</h4>
+              <ul>
+                <li><strong>UX Research Synthesis:</strong> Translated qualitative user research into actionable recommendations for product engineering.</li>
+                <li><strong>Front-End Design Contributions:</strong> Created Figma component edits and UI layout suggestions for piahub.ai.</li>
+                <li><strong>Usability Documentation:</strong> Developed user personas and usability finding reports guiding product iteration.</li>
+              </ul>
+              <div class="tech-pills">
+                <span class="tech-pill">UX Research</span>
+                <span class="tech-pill">Figma Wireframing</span>
+                <span class="tech-pill">Component Design</span>
+                <span class="tech-pill">Usability Testing</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <button class="live-link-btn" onclick="openModal('wenzo')" style="background: #4F46E5; color: #FFF;">Read Case Study ↗</button>
+              <a class="btn ghost" href="https://piahub.ai" target="_blank" rel="noopener" style="padding: 10px 18px; font-size: 11.5px;">Visit Live Site ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section with Actual Company Logos -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">03 — Experience</div>
+        <h2>Work on File &amp; Partner Companies</h2>
+      </div>
+      <div class="section-num">6 ROLES</div>
+    </div>
+
+    <!-- Organization Logos Marquee Strip -->
+    <div class="logo-strip">
+      <div class="logo-strip-item">
+        <img src="Pundito logo.jpg" alt="Pundito Logo">
+        <span>PUNDITO</span>
+      </div>
+      <div class="logo-strip-item">
+        <img src="bakingintelligence_logo_stamp.png" alt="Baking Intelligence Logo">
+        <span>BAKING INTELLIGENCE</span>
+      </div>
+      <div class="logo-strip-item">
+        <img src="ifaf-logo.png" alt="Isaac Fola-Alade Foundation Logo">
+        <span>IFA FOUNDATION</span>
+      </div>
+      <div class="logo-strip-item">
+        <img src="wenzo_technologies_logo_circle.jpg" alt="Wenzo Technologies Logo">
+        <span>WENZO TECH</span>
+      </div>
+      <div class="logo-strip-item">
+        <img src="ALX-logo-2025.jpg" alt="ALX Logo">
+        <span>ALX PATHWAY</span>
+      </div>
+    </div>
+
+    <!-- Ticket 1: Pundito (Growth & Partnerships Lead) -->
+    <div class="ticket">
+      <div class="ticket-stub">
+        <div>
+          <div class="org-logo-wrapper">
+            <div class="org-logo-img-box">
+              <img src="Pundito logo.jpg" alt="Pundito Logo">
+            </div>
+            <div>
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; color:var(--ink); display:block;">PUNDITO</span>
+              <span class="status current" style="margin-top:2px;">Growth Lead</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="dates">Jun 2026 — Aug 2026</div>
+          <div class="place">Remote / Accra</div>
+        </div>
+      </div>
+      <div class="ticket-divider"></div>
+      <div class="ticket-body">
+        <div class="ticket-body-head">
+          <div>
+            <h3>Growth &amp; Partnerships Lead</h3>
+            <div class="org" style="color:var(--mustard);">
+              Pundito
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Creator Partnerships:</strong> Secured, managed, and activated high-impact creator partnerships (including Ebuka, Buchi) driving rapid brand adoption.</li>
+          <li><strong>Competition &amp; Campaign Strategy:</strong> Architected competition strategies around major tournaments (African competitions, Round of 16, European leagues) to maximize active user participation.</li>
+          <li><strong>Community &amp; Ecosystem Building:</strong> Built an engaged user ecosystem — establishing partnerships with ALX Ghana, gamified leaderboards, and user retention loops.</li>
+          <li><strong>Acquisition &amp; Deal Structuring:</strong> Formulated end-to-end user acquisition/retention strategies and led strategic deal negotiations and contract structuring.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ticket 2: bakinintelligence.shop & Baking Intelligence -->
+    <div class="ticket">
+      <div class="ticket-stub">
+        <div>
+          <div class="org-logo-wrapper">
+            <div class="org-logo-img-box">
+              <img src="bakingintelligence_logo_stamp.png" alt="Baking Intelligence Logo">
+            </div>
+            <div>
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; color:var(--ink); display:block;">BAKING INT.</span>
+              <span class="status current" style="margin-top:2px;">Ongoing</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="dates">Sep 2018 — Present</div>
+          <div class="place">Remote</div>
+        </div>
+      </div>
+      <div class="ticket-divider"></div>
+      <div class="ticket-body">
+        <div class="ticket-body-head">
+          <div>
+            <h3>Front-End Designer, E-Com Specialist &amp; Brand Lead</h3>
+            <div class="org" style="color:var(--mustard);">
+              Baking Intelligence / bakingintelligence.shop
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li><strong>E-Commerce Platform &amp; Shop:</strong> Led the front-end design, brand identity kit reconciliation, and general site management for <em>bakingintelligence.shop</em>.</li>
+          <li><strong>Scholarship User Journey:</strong> Designed and implemented the complete scholarship section — streamlining student application intake and the payment user journey.</li>
+          <li><strong>Student Work Showcase:</strong> Built curated visual showcase sections to display student projects and celebrate academy achievements.</li>
+          <li><strong>Content &amp; Media Production:</strong> Conceptualised digital photography, brand videography, and storytelling content driving customer conversion across channels.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ticket 3: Isaac Fola-Alade Foundation -->
+    <div class="ticket">
+      <div class="ticket-stub">
+        <div>
+          <div class="org-logo-wrapper">
+            <div class="org-logo-img-box">
+              <img src="ifaf-logo.png" alt="Isaac Fola-Alade Foundation Logo">
+            </div>
+            <div>
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; color:var(--ink); display:block;">IFA FOUNDATION</span>
+              <span class="status current" style="margin-top:2px;">Ongoing</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="dates">Jan 2024 — Present</div>
+          <div class="place">Remote / Accra</div>
+        </div>
+      </div>
+      <div class="ticket-divider"></div>
+      <div class="ticket-body">
+        <div class="ticket-body-head">
+          <div>
+            <h3>Front-End Designer &amp; Site Manager</h3>
+            <div class="org" style="color:var(--teal-dark);">
+              Isaac Fola-Alade Foundation (isaacfolaaladefoundation.org)
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Web Platform Design:</strong> Crafted clean, responsive front-end layouts and typography for the foundation's official website.</li>
+          <li><strong>Site Management &amp; Admin:</strong> Responsible for ongoing content updates, platform health, asset maintenance, and cross-device testing.</li>
+          <li><strong>Brand Integrity:</strong> Ensured brand identity guidelines were faithfully maintained across outreach campaigns and foundation literature.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ticket 4: Wenzo Technologies -->
+    <div class="ticket">
+      <div class="ticket-stub">
+        <div>
+          <div class="org-logo-wrapper">
+            <div class="org-logo-img-box">
+              <img src="wenzo_technologies_logo_circle.jpg" alt="Wenzo Technologies Logo">
+            </div>
+            <div>
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; color:var(--ink); display:block;">WENZO TECH</span>
+              <span class="status" style="margin-top:2px;">Contract</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="dates">Oct 2025 — Dec 2025</div>
+          <div class="place">Remote</div>
+        </div>
+      </div>
+      <div class="ticket-divider"></div>
+      <div class="ticket-body">
+        <div class="ticket-body-head">
+          <div>
+            <h3>UX Researcher &amp; Design Contributor</h3>
+            <div class="org" style="color:#4F46E5;">
+              Wenzo Technologies — piahub.ai
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li>Conducted qualitative user research and synthesised findings into strategic UX product recommendations.</li>
+          <li>Contributed front-end design edits and component suggestions in Figma for <em>piahub.ai</em>.</li>
+          <li>Created user personas, usability documentation, and client reporting frameworks.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ticket 5: Data Science Project (Python Streamlit) -->
+    <div class="ticket">
+      <div class="ticket-stub">
+        <div>
+          <div class="org-logo-wrapper">
+            <div class="org-logo-img-box" style="background:#F0F7FF;">
+              <svg viewBox="0 0 128 128" width="32" height="32">
+                <path fill="url(#pyA)" d="M63.7 3.2c-29 0-27.2 12.6-27.2 12.6l.1 13.1h27.7v3.9H25.4S3.7 30 3.7 59.2c0 29.2 19 28.1 19 28.1h11.4V71.4s-.6-19 18.7-19h28.7s18.2.3 18.2-17.7c0-18-15.7-18.7-15.7-18.7H83.8S84.6 3.2 63.7 3.2zm-14.7 9c2.8 0 5 2.2 5 5s-2.2 5-5 5-5-2.2-5-5 2.2-5 5-5z"/>
+                <path fill="url(#pyB)" d="M64.3 124.8c29 0 27.2-12.6 27.2-12.6l-.1-13.1H63.7v-3.9h38.9s21.7 2.8 21.7-26.4c0-29.2-19-28.1-19-28.1h-11.4v15.9s.6 19-18.7 19H45.9s-18.2-.3-18.2 17.7c0 18 15.7 18.7 15.7 18.7h12.1s-.8 12.8 20.1 12.8zm14.7-9c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"/>
+                <defs>
+                  <linearGradient id="pyA" x1="15.8" y1="9.3" x2="88" y2="81.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#387EB8"/><stop offset="1" stop-color="#366994"/></linearGradient>
+                  <linearGradient id="pyB" x1="41" y1="47.1" x2="114" y2="120.1" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE052"/><stop offset="1" stop-color="#FFC331"/></linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div>
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; color:var(--ink); display:block;">DATA SCIENCE</span>
+              <span class="status" style="margin-top:2px;">Project Lead</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="dates">Feb 2025 — Apr 2025</div>
+          <div class="place">Accra, Ghana</div>
+        </div>
+      </div>
+      <div class="ticket-divider"></div>
+      <div class="ticket-body">
+        <div class="ticket-body-head">
+          <div>
+            <h3>Streamlit App Developer &amp; Project Manager</h3>
+            <div class="org" style="color:#EA580C;">
+              Python &amp; Streamlit — Data Science Project
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li>Led a 3-member team through planning, technical documentation, and front-end development under tight deadlines.</li>
+          <li>Coordinated component integrations into polished final deliverables matching client expectations.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ticket 6: ALX Pathway -->
+    <div class="ticket">
+      <div class="ticket-stub">
+        <div>
+          <div class="org-logo-wrapper">
+            <div class="org-logo-img-box">
+              <img src="ALX-logo-2025.jpg" alt="ALX Logo">
+            </div>
+            <div>
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; color:var(--ink); display:block;">ALX PATHWAY</span>
+              <span class="status" style="margin-top:2px;">Volunteer</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="dates">Oct 2024 — Nov 2024</div>
+          <div class="place">Online</div>
+        </div>
+      </div>
+      <div class="ticket-divider"></div>
+      <div class="ticket-body">
+        <div class="ticket-body-head">
+          <div>
+            <h3>Volunteer Customer Care Representative</h3>
+            <div class="org" style="color:#DC2626;">
+              ALX Pathway
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li>Managed multi-channel customer inquiry resolution across calls, emails, and live chat with high satisfaction rates.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">04 — Skills &amp; Capabilities</div>
+        <h2>Toolkit on Hand</h2>
+      </div>
+      <div class="section-num">5 CATEGORIES</div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h4>Growth, Partnerships &amp; Ecosystems</h4>
+        <div class="chip-row">
+          <span class="chip">Influencer &amp; Creator Partnerships</span>
+          <span class="chip">Competition &amp; Campaign Strategy</span>
+          <span class="chip">Community Building (ALX Ghana)</span>
+          <span class="chip">User Acquisition &amp; Retention</span>
+          <span class="chip">Deal Structuring &amp; Negotiation</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>Web Design &amp; E-Commerce</h4>
+        <div class="chip-row">
+          <span class="chip">Scholarship User Journeys</span>
+          <span class="chip">Payment Integration UX</span>
+          <span class="chip">Brand Kit Reconciliation</span>
+          <span class="chip">Site Management</span>
+          <span class="chip">Student Work Portfolios</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>Content &amp; Brand Strategy</h4>
+        <div class="chip-row">
+          <span class="chip">Brand Voice Adaptation</span>
+          <span class="chip">Content Strategy</span>
+          <span class="chip">Visual Storytelling</span>
+          <span class="chip">Digital Photography &amp; Video</span>
+          <span class="chip">Documentation</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>UX Research &amp; Visual Design</h4>
+        <div class="chip-row">
+          <span class="chip">Figma</span>
+          <span class="chip">UI/UX Principles</span>
+          <span class="chip">Wireframing &amp; Prototyping</span>
+          <span class="chip">Responsive Design</span>
+          <span class="chip">User Personas</span>
+        </div>
+      </div>
+      <div class="skill-card" style="grid-column: span 2;">
+        <h4>Development &amp; Technical Stack</h4>
+        <div class="chip-row">
+          <span class="chip">React.js</span>
+          <span class="chip">JavaScript (ES6+)</span>
+          <span class="chip">HTML5 &amp; CSS3</span>
+          <span class="chip">Front-End Architecture</span>
+          <span class="chip">Git &amp; GitHub</span>
+          <span class="chip">Vercel Deployment</span>
+          <span class="chip">localStorage API</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education & Certifications with Org Logos -->
+<section id="education">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">05 — Education &amp; Certifications</div>
+        <h2>Paper Trail &amp; Institutions</h2>
+      </div>
+      <div class="section-num">ACCREDITATION</div>
+    </div>
+    <div class="edu-grid">
+      <div>
+        <div class="edu-item">
+          <div class="row">
+            <h4>
+              <svg viewBox="0 0 100 120" width="22" height="26" style="vertical-align:middle;">
+                <path d="M50 0 C75 0 95 10 95 30 C95 75 50 115 50 120 C50 115 5 75 5 30 C5 10 25 0 50 0 Z" fill="#A51C30"/>
+                <path d="M22 25 h20 v18 h-20 Z M58 25 h20 v18 h-20 Z M40 60 h20 v18 h-20 Z" fill="#FFFFFF"/>
+                <text x="25" y="38" font-family="serif" font-size="13" font-weight="bold" fill="#A51C30">VE</text>
+                <text x="61" y="38" font-family="serif" font-size="13" font-weight="bold" fill="#A51C30">RI</text>
+                <text x="43" y="73" font-family="serif" font-size="13" font-weight="bold" fill="#A51C30">TAS</text>
+              </svg>
+              CS50x — Intro to Computer Science
+            </h4>
+            <div class="when">May 2024 – Mar 2025</div>
+          </div>
+          <div class="org" style="color:#A51C30;">Harvard University · Online</div>
+          <p>Rigorous computer science curriculum covering algorithms, data structures, software engineering principles, Python, JavaScript, and web application development.</p>
+        </div>
+        <div class="edu-item">
+          <div class="row">
+            <h4>
+              <img src="ALX-logo-2025.jpg" alt="ALX Logo" style="width:22px; height:22px; object-fit:contain; border-radius:4px; vertical-align:middle;">
+              Professional Foundation
+            </h4>
+            <div class="when">May 2023 – Aug 2023</div>
+          </div>
+          <div class="org" style="color:#DC2626;">ALX · Accra, Ghana</div>
+          <p>Leadership, project management, and collaborative problem-solving program focused on team execution and real-world case studies.</p>
+        </div>
+      </div>
+      <div>
+        <div class="edu-item">
+          <div class="row">
+            <h4>
+              <svg viewBox="0 0 24 24" width="22" height="22" style="vertical-align:middle;"><path fill="#F25022" d="M1 1h10v10H1z"/><path fill="#7FBA00" d="M13 1h10v10H13z"/><path fill="#00A4EF" d="M1 13h10v10H1z"/><path fill="#FFB900" d="M13 13h10v10H13z"/></svg>
+              AI-900: Azure AI Fundamentals
+            </h4>
+            <div class="when">24/04/2026</div>
+          </div>
+          <div class="org" style="color:#00A4EF;">Microsoft</div>
+          <p>Verified credential covering machine learning fundamentals, computer vision, NLP, and cloud AI workloads.</p>
+          <a class="cert-verify" href="https://coursera.org/verify/P50C439F9HP4" target="_blank">Verify: coursera.org/verify/P50C439F9HP4 ↗</a>
+        </div>
+        <div class="edu-item">
+          <div class="row">
+            <h4>
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="#052FAD" style="vertical-align:middle;"><rect x="2" y="4" width="20" height="3"/><rect x="2" y="9" width="20" height="3"/><rect x="2" y="14" width="20" height="3"/><rect x="2" y="19" width="20" height="3"/></svg>
+              Intro to Cloud Computing
+            </h4>
+            <div class="when">13/02/2026</div>
+          </div>
+          <div class="org" style="color:#052FAD;">IBM</div>
+          <p>Certified in cloud deployment models, infrastructure, SaaS platforms, and cloud security basics.</p>
+          <span class="cert-verify">Cert No. E09AA1-E5146Q</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact & Footer -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <h2>Let's coordinate<br>the next platform.</h2>
+      <div class="contact-links">
+        <a href="mailto:jesunboalade@gmail.com">→ Email: jesunboalade@gmail.com</a>
+        <button onclick="copyEmail()">→ Click to Copy Email Address</button>
+        <a href="tel:+233201347405">→ Phone: +233 20 134 7405</a>
+        <a href="https://www.linkedin.com/in/jesunbo-fola-alade-56a112207/" target="_blank" rel="noopener">→ LinkedIn Profile ↗</a>
+        <a href="Jesunbo Fola-Alade Resume_2.pdf" target="_blank">→ Download CV (PDF) ↗</a>
+        <span style="font-family:'IBM Plex Mono', monospace; font-size:14px; color:var(--ink-faint); margin-top:6px;">→ Location: Accra, Ghana (Open to Remote &amp; Relocation)</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>JESUNBO FOLA-ALADE — PORTFOLIO 2026</span>
+      <span>ACCRA, GHANA · GROWTH, PARTNERSHIPS &amp; FRONT-END DESIGN</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Interactive Modal Drawer -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
+  <div class="modal-drawer" id="modalDrawer">
+    <div>
+      <button class="modal-close" onclick="closeModal()">Close ✕</button>
+      <div class="modal-tag" id="modalTag">Case Study</div>
+      <h3 class="modal-title" id="modalTitle">Project Title</h3>
+      <div class="modal-subtitle" id="modalSubtitle">Subheading</div>
+      <div class="modal-body" id="modalBody">
+        <!-- Content inserted dynamically -->
+      </div>
+    </div>
+    <div class="modal-chips" id="modalChips">
+      <!-- Chips inserted dynamically -->
+    </div>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div class="toast" id="toastNotification">
+  <span>✓ Email copied to clipboard (jesunboalade@gmail.com)</span>
+</div>
+
+<script>
+  // Mobile Nav Toggle
+  const mobileToggle = document.getElementById('mobileToggle');
+  const navMenu = document.getElementById('navMenu');
+  mobileToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+
+  // Modal Data Store for 3 Featured Projects
+  const projectData = {
+    bakinshop: {
+      tag: "01 — Featured E-Commerce & Academy",
+      title: "bakingintelligence.shop",
+      subtitle: "Scholarship Journey, Student Showcase & Brand Kit Reconciliation",
+      body: `
+        <p><strong>bakingintelligence.shop</strong> is the primary web storefront and academy portal for Baking Intelligence. My involvement spanned front-end design, user journey mapping, visual brand reconciliation, and continuous platform administration.</p>
+        <h4>Key Accomplishments:</h4>
+        <ul>
+          <li><strong>Scholarship Section & User Journey:</strong> Designed and implemented an intuitive, multi-step application intake form paired with a seamless payment user journey for scholarship applicants.</li>
+          <li><strong>Student Work Showcase:</strong> Built a visual gallery section celebrating student projects, encouraging community engagement and boosting course enrollment.</li>
+          <li><strong>Brand Kit Reconciliation:</strong> Audited and harmonized fonts, color tokens, button components, and digital assets across all web shop pages for 100% brand consistency.</li>
+          <li><strong>General Site Management:</strong> Continuous performance tuning, mobile optimization, and content updates.</li>
+        </ul>
+      `,
+      chips: ["E-Commerce UX", "Scholarship Flow", "Payment Journey", "Student Showcase", "Brand Reconciliation", "Site Management"]
+    },
+    foundation: {
+      tag: "02 — Featured Non-Profit Platform",
+      title: "isaacfolaaladefoundation.org",
+      subtitle: "Front-End Web Design & Continuous Platform Management",
+      body: `
+        <p>The official website for the <strong>Isaac Fola-Alade Foundation</strong> serves as the central digital hub for foundation initiatives, community empowerment programs, and donor outreach.</p>
+        <h4>Key Accomplishments:</h4>
+        <ul>
+          <li><strong>Front-End Web Design:</strong> Structured clean, accessible, and elegant page layouts tailored for non-profit storytelling and audience engagement.</li>
+          <li><strong>General Site Management:</strong> Oversee day-to-day platform administration, content uploads, asset updates, and cross-browser testing.</li>
+          <li><strong>Brand Alignment:</strong> Applied consistent brand typography, color palettes, and visual hierarchy across all foundation subpages.</li>
+        </ul>
+      `,
+      chips: ["Front-End Design", "Site Management", "HTML5 / CSS3", "Responsive UI", "Non-Profit Strategy"]
+    },
+    wenzo: {
+      tag: "03 — Featured UX & Product Design",
+      title: "Wenzo Technologies — piahub.ai",
+      subtitle: "User Personas, Usability Reporting & Figma UI Contributions",
+      body: `
+        <p>During my UX Research contract at Wenzo Technologies, I worked closely with product teams to evaluate user behavior and translate research findings into actionable design improvements for <strong>piahub.ai</strong>.</p>
+        <h4>Key Accomplishments:</h4>
+        <ul>
+          <li><strong>UX Research & Personas:</strong> Conducted in-depth interviews and synthesized qualitative user data into actionable persona documentation.</li>
+          <li><strong>Figma UI Components:</strong> Contributed component suggestions and design edits in Figma to improve application navigation.</li>
+          <li><strong>Usability Findings:</strong> Prepared detailed usability reports that guided sprint planning and client reporting.</li>
+        </ul>
+      `,
+      chips: ["UX Research", "Figma", "Usability Testing", "UI Components", "User Personas"]
+    }
+  };
+
+  function openModal(projectId) {
+    const data = projectData[projectId];
+    if (!data) return;
+
+    document.getElementById('modalTag').innerText = data.tag;
+    document.getElementById('modalTitle').innerText = data.title;
+    document.getElementById('modalSubtitle').innerText = data.subtitle;
+    document.getElementById('modalBody').innerHTML = data.body;
+
+    const chipsContainer = document.getElementById('modalChips');
+    chipsContainer.innerHTML = '';
+    data.chips.forEach(chip => {
+      const span = document.createElement('span');
+      span.className = 'modal-chip';
+      span.innerText = chip;
+      chipsContainer.appendChild(span);
+    });
+
+    document.getElementById('modalOverlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('modalOverlay').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function closeModalOnOverlay(event) {
+    if (event.target === document.getElementById('modalOverlay')) {
+      closeModal();
+    }
+  }
+
+  // Copy Email Toast
+  function copyEmail() {
+    navigator.clipboard.writeText('jesunboalade@gmail.com').then(() => {
+      const toast = document.getElementById('toastNotification');
+      toast.classList.add('active');
+      setTimeout(() => {
+        toast.classList.remove('active');
+      }, 3000);
+    });
+  }
+</script>
+
+</body>
+</html>
